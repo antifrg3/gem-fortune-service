@@ -5,7 +5,7 @@ import type { SajuChart } from "@/lib/saju"
 import { metaphorDictionary } from "@/lib/data/metaphor-dictionary"
 
 interface GemCreationCardProps {
-  saju: SajuChart
+  saju?: SajuChart | null
 }
 
 export function GemCreationCard({ saju }: GemCreationCardProps) {
@@ -116,7 +116,7 @@ export function GemCreationCard({ saju }: GemCreationCardProps) {
     }
   }, [])
 
-  const dayPillar = `${saju.day.stem}${saju.day.branch}`
+  const dayPillar = saju ? `${saju.day.stem}${saju.day.branch}` : "?"
 
   function handleStartRefining() {
     console.log("제련 시작!")
