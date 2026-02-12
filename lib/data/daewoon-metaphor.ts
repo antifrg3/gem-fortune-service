@@ -1,36 +1,30 @@
 /**
  * 대운(大運) 보석 메타포 DB
- * 
+ *
  * "인생의 계절 (Seasons of Life)" - 10년마다 바뀌는 조명
  * 보석은 그대로지만, 조명이 바뀌면 반짝임이 달라집니다
  */
 
 export const daewoonMetaphor = {
-  
   concept: {
     original: "대운(大運)",
     simple: "인생의 계절",
     poetic: "10년마다 바뀌는 조명",
-    
-    description: "보석은 그대로지만, 비추는 빛이 바뀌면 완전히 다른 색으로 빛납니다. 10년마다 당신을 비추는 조명이 바뀝니다.",
-    
-    metaphor_story: "같은 보석이라도 아침 햇살 아래서는 따뜻하게, 저녁 노을 아래서는 붉게 빛납니다. 빛이 바뀌면 보석의 색도 바뀝니다.",
-    
-    key_point: "대운은 당신을 바꾸지 않습니다. 다만 당신의 어떤 면이 빛날지 결정합니다."
+    description:
+      "보석은 그대로지만, 비추는 빛이 바뀌면 완전히 다른 색으로 빛납니다. 10년마다 당신을 비추는 조명이 바뀝니다.",
+    metaphor_story:
+      "같은 보석이라도 아침 햇살 아래서는 따뜻하게, 저녁 노을 아래서는 붉게 빛납니다. 빛이 바뀌면 보석의 색도 바뀝니다.",
+    key_point: "대운은 당신을 바꾸지 않습니다. 다만 당신의 어떤 면이 빛날지 결정합니다.",
   },
-  
   structure: {
     cycle: "10년",
     totalCycles: 8,
     lifespan: "0세~80세 (8개 대운)",
-    
     calculation: "출생 시간으로부터 계산",
-    change: "천간과 지지가 함께 바뀜"
+    change: "천간과 지지가 함께 바뀜",
   },
-  
-  // 천간별 조명 색깔
   cheonganLight: {
-    "甲": {
+    甲: {
       element: "木",
       color: "#10b981",
       light: "초록빛 새벽 조명",
@@ -39,9 +33,9 @@ export const daewoonMetaphor = {
       description: "아침 햇살처럼 새로운 것을 시작하게 만듭니다.",
       good_for: "창업, 새 분야 도전, 공부 시작",
       be_careful: "너무 많은 것을 시작해서 분산되지 않게",
-      metaphor: "새싹이 돋는 봄날 아침빛. 모든 게 새롭게 시작됩니다."
+      metaphor: "새싹이 돋는 봄날 아침빛. 모든 게 새롭게 시작됩니다.",
     },
-    "乙": {
+    乙: {
       element: "木",
       color: "#22c55e",
       light: "부드러운 초록빛",
@@ -50,20 +44,20 @@ export const daewoonMetaphor = {
       description: "덩굴처럼 유연하게 자라게 합니다.",
       good_for: "예술, 디자인, 인간관계 확장",
       be_careful: "너무 흔들리지 말고 중심을 잡으세요",
-      metaphor: "담쟁이 넝쿨에 비치는 햇살. 어디든 뻗어갑니다."
+      metaphor: "담쟁이 넝쿨에 비치는 햇살. 어디든 뻗어갑니다.",
     },
-    "丙": {
+    丙: {
       element: "火",
       color: "#ef4444",
       light: "강렬한 붉은 조명",
-      mood: "폭발적 에너지의 빛",
+      mood: "폭발적 광채의 빛",
       energy: "열정, 카리스마, 추진력",
       description: "태양처럼 강렬하게 모든 것을 밝힙니다.",
       good_for: "리더십 발휘, 대중 앞에 서기, 영향력 확대",
       be_careful: "타버리지 않게 휴식도 필요합니다",
-      metaphor: "한낮 태양빛. 모든 것이 당신을 중심으로 돕니다."
+      metaphor: "한낮 태양빛. 모든 것이 당신을 중심으로 돕니다.",
     },
-    "丁": {
+    丁: {
       element: "火",
       color: "#f87171",
       light: "따뜻한 촛불 조명",
@@ -72,9 +66,9 @@ export const daewoonMetaphor = {
       description: "촛불처럼 작지만 강렬하게 한 곳을 밝힙니다.",
       good_for: "전문성 심화, 멘토링, 정밀한 작업",
       be_careful: "완벽주의에 빠지지 않게",
-      metaphor: "어둠 속 촛불. 작지만 의미 있는 빛입니다."
+      metaphor: "어둠 속 촛불. 작지만 의미 있는 빛입니다.",
     },
-    "戊": {
+    戊: {
       element: "土",
       color: "#d4a574",
       light: "황금빛 대지 조명",
@@ -83,9 +77,9 @@ export const daewoonMetaphor = {
       description: "산처럼 든든하게 모든 것을 받쳐줍니다.",
       good_for: "기반 다지기, 축적, 신뢰 쌓기",
       be_careful: "변화를 너무 거부하지 마세요",
-      metaphor: "산에 비치는 석양빛. 든든하고 안정적입니다."
+      metaphor: "산에 비치는 석양빛. 든든하고 안정적입니다.",
     },
-    "己": {
+    己: {
       element: "土",
       color: "#a16207",
       light: "따뜻한 대지 조명",
@@ -94,9 +88,9 @@ export const daewoonMetaphor = {
       description: "비옥한 땅처럼 모든 것을 키웁니다.",
       good_for: "사람 키우기, 치유, 서비스",
       be_careful: "과보호하지 않게",
-      metaphor: "밭에 비치는 오후빛. 모든 것을 자라게 합니다."
+      metaphor: "밭에 비치는 오후빛. 모든 것을 자라게 합니다.",
     },
-    "庚": {
+    庚: {
       element: "金",
       color: "#e5e7eb",
       light: "차가운 은빛 조명",
@@ -105,9 +99,9 @@ export const daewoonMetaphor = {
       description: "칼날처럼 날카롭게 불필요한 것을 잘라냅니다.",
       good_for: "정리, 결단, 구조조정",
       be_careful: "너무 차갑지 않게 온기도 필요",
-      metaphor: "가을 칼바람에 비치는 빛. 명확하게 정리합니다."
+      metaphor: "가을 칼바람에 비치는 빛. 명확하게 정리합니다.",
     },
-    "辛": {
+    辛: {
       element: "金",
       color: "#f1f5f9",
       light: "정제된 보석 조명",
@@ -116,9 +110,9 @@ export const daewoonMetaphor = {
       description: "보석을 다듬듯 모든 것을 완벽하게 만듭니다.",
       good_for: "완성도 높이기, 디테일, 브랜딩",
       be_careful: "완벽주의로 시작을 못하지 않게",
-      metaphor: "석양빛에 반짝이는 보석. 완벽하게 빛납니다."
+      metaphor: "석양빛에 반짝이는 보석. 완벽하게 빛납니다.",
     },
-    "壬": {
+    壬: {
       element: "水",
       color: "#3b82f6",
       light: "흐르는 강물 조명",
@@ -127,9 +121,9 @@ export const daewoonMetaphor = {
       description: "강물처럼 막힘없이 흐르게 합니다.",
       good_for: "전략 수립, 네트워킹, 흐름 타기",
       be_careful: "방향성을 잃지 않게",
-      metaphor: "달빛에 반짝이는 강물. 지혜롭게 흐릅니다."
+      metaphor: "달빛에 반짝이는 강물. 지혜롭게 흐릅니다.",
     },
-    "癸": {
+    癸: {
       element: "水",
       color: "#1e3a8a",
       light: "이슬 맺힌 조명",
@@ -138,111 +132,108 @@ export const daewoonMetaphor = {
       description: "이슬처럼 조용히 스며들어 본질을 봅니다.",
       good_for: "연구, 통찰, 내면 성장",
       be_careful: "현실감각도 유지하세요",
-      metaphor: "새벽 이슬에 비치는 빛. 섬세하고 깊습니다."
-    }
+      metaphor: "새벽 이슬에 비치는 빛. 섬세하고 깊습니다.",
+    },
   },
-  
-  // 지지별 조명 환경
   jijiEnvironment: {
-    "子": {
+    子: {
       season: "겨울 밤",
       environment: "고요하고 깊은 환경",
       intensity: "약하지만 집중적",
       description: "차갑고 조용하지만, 깊은 곳에서 지혜가 자랍니다.",
       good_for: "연구, 통찰, 내면 성장",
-      challenge: "외로움, 답답함"
+      challenge: "외로움, 답답함",
     },
-    "丑": {
+    丑: {
       season: "겨울 새벽",
       environment: "얼어붙었지만 변화 준비",
       intensity: "낮지만 꾸준함",
       description: "춥지만 봄을 준비하는 땅. 인내가 필요합니다.",
       good_for: "기반 다지기, 축적, 준비",
-      challenge: "느린 진행, 답답함"
+      challenge: "느린 진행, 답답함",
     },
-    "寅": {
+    寅: {
       season: "이른 봄",
-      environment: "깨어나는 에너지",
+      environment: "깨어나는 광채",
       intensity: "강하게 시작",
       description: "새벽 숲처럼 모든 게 깨어나기 시작합니다.",
       good_for: "시작, 개척, 도전",
-      challenge: "성급함, 과열"
+      challenge: "성급함, 과열",
     },
-    "卯": {
+    卯: {
       season: "봄 한낮",
       environment: "활기차고 아름다운",
       intensity: "밝고 부드러움",
       description: "봄날 정원처럼 아름답고 자유롭습니다.",
       good_for: "창의성, 인간관계, 표현",
-      challenge: "산만함, 가벼움"
+      challenge: "산만함, 가벼움",
     },
-    "辰": {
+    辰: {
       season: "봄비 오는 날",
       environment: "촉촉하고 비옥함",
       intensity: "중간, 안정적",
       description: "봄비 맞은 땅처럼 모든 걸 키울 준비가 됩니다.",
       good_for: "성장, 확장, 변화",
-      challenge: "혼란, 불확실성"
+      challenge: "혼란, 불확실성",
     },
-    "巳": {
+    巳: {
       season: "초여름",
       environment: "뜨겁게 타오름",
       intensity: "매우 강함",
       description: "여름 열기처럼 강렬하고 폭발적입니다.",
       good_for: "돌파, 변혁, 빠른 성장",
-      challenge: "번아웃, 충돌"
+      challenge: "번아웃, 충돌",
     },
-    "午": {
+    午: {
       season: "한여름 정오",
-      environment: "최고조 에너지",
+      environment: "최고조 광채",
       intensity: "극도로 강함",
       description: "한낮 태양처럼 모든 게 최고조입니다.",
       good_for: "정점 달성, 리더십, 영향력",
-      challenge: "과열, 지속 어려움"
+      challenge: "과열, 지속 어려움",
     },
-    "未": {
+    未: {
       season: "여름 저녁",
       environment: "뜨거움이 식어감",
       intensity: "강하지만 부드러워짐",
       description: "여름 저녁처럼 열기는 남았지만 편안해집니다.",
       good_for: "정리, 마무리, 전환",
-      challenge: "아쉬움, 상실감"
+      challenge: "아쉬움, 상실감",
     },
-    "申": {
+    申: {
       season: "초가을",
       environment: "서늘하고 명확함",
       intensity: "중간, 날카로움",
       description: "가을 서리처럼 명확하고 차가워집니다.",
       good_for: "정리, 수확, 결단",
-      challenge: "냉정함, 외로움"
+      challenge: "냉정함, 외로움",
     },
-    "酉": {
+    酉: {
       season: "가을 석양",
       environment: "완벽하게 정제됨",
       intensity: "적당히 강함",
       description: "석양빛처럼 아름답고 완벽합니다.",
       good_for: "완성, 정제, 마무리",
-      challenge: "완벽주의, 경직"
+      challenge: "완벽주의, 경직",
     },
-    "戌": {
+    戌: {
       season: "가을 황혼",
       environment: "하루의 끝",
       intensity: "약해지지만 깊어짐",
       description: "황혼처럼 끝이지만 아름답습니다.",
       good_for: "성찰, 마무리, 의미 찾기",
-      challenge: "우울, 집착"
+      challenge: "우울, 집착",
     },
-    "亥": {
+    亥: {
       season: "초겨울 밤",
       environment: "고요하고 깊어짐",
       intensity: "낮지만 깊음",
       description: "겨울 밤처럼 조용하지만 무한한 가능성.",
       good_for: "휴식, 재충전, 준비",
-      challenge: "고립, 불안"
-    }
-  }
-  
-} as const;
+      challenge: "고립, 불안",
+    },
+  },
+} as const
 
-export type CheonganKey = keyof typeof daewoonMetaphor.cheonganLight;
-export type JijiKey = keyof typeof daewoonMetaphor.jijiEnvironment;
+export type CheonganKey = keyof typeof daewoonMetaphor.cheonganLight
+export type JijiKey = keyof typeof daewoonMetaphor.jijiEnvironment

@@ -1,12 +1,11 @@
 /**
  * 지장간(支藏干) 보석 메타포 DB
- * 
+ *
  * "숨은 결정 (Hidden Crystals)" - 보석 내부에 숨겨진 빛
  * 12지지 안에 숨어있는 천간들 (특정 상황에서 발동되는 잠재력)
  */
 
 export const jijangganMetaphor = {
-  
   子: {
     hanja: "子",
     jiji: "子",
@@ -16,40 +15,32 @@ export const jijangganMetaphor = {
     icon: "❄️💎",
     season: "겨울 한밤",
     color: "#3b82f6",
-    
     hidden: ["癸"],
     hiddenSimple: ["계수(癸水)"],
-    
     mainElement: "水",
     mainPercent: 100,
-    
     description: "표면은 차갑게 얼었지만, 깊은 곳에서는 물이 흐릅니다. 고요 속에 담긴 무한한 가능성.",
-    
     trigger: {
       when: "위기 상황",
       how: "차분한 판단력과 직관이 빛을 발합니다",
-      example: "모두가 당황할 때 냉정하게 본질을 꿰뚫어 봄"
+      example: "모두가 당황할 때 냉정하게 본질을 꿰뚫어 봄",
     },
-    
     hidden_power: {
-      "癸": {
+      癸: {
         name: "계수의 지혜",
         description: "이슬처럼 조용히 스며드는 통찰력. 작은 것에서 진실을 읽는 능력.",
         when_activated: "복잡한 문제를 풀어야 할 때",
         strength: "섬세한 직관, 본질 파악",
-        metaphor: "호수 바닥에 가라앉은 진주처럼, 깊이 생각할수록 빛납니다."
-      }
+        metaphor: "호수 바닥에 가라앉은 진주처럼, 깊이 생각할수록 빛납니다.",
+      },
     },
-    
     life_phase: {
       youth: "차갑게 느껴질 수 있지만, 내면은 깊습니다",
       prime: "축적된 지혜가 빛을 발하기 시작합니다",
-      mature: "고요한 호수처럼, 모든 것을 비추는 거울이 됩니다"
+      mature: "고요한 호수처럼, 모든 것을 비추는 거울이 됩니다",
     },
-    
-    metaphor_story: "겨울 호수는 조용합니다. 하지만 얼음 아래 물고기들은 여전히 헤엄칩니다. 보이지 않는다고 없는 게 아닙니다."
+    metaphor_story: "겨울 호수는 조용합니다. 하지만 얼음 아래 물고기들은 여전히 헤엄칩니다. 보이지 않는다고 없는 게 아닙니다.",
   },
-  
   丑: {
     hanja: "丑",
     jiji: "丑",
@@ -59,60 +50,51 @@ export const jijangganMetaphor = {
     icon: "🏔️💎",
     season: "겨울 새벽",
     color: "#8b7355",
-    
     hidden: ["己", "癸", "辛"],
     hiddenSimple: ["기토(己土)", "계수(癸水)", "신금(辛金)"],
-    
     mainElement: "土",
     mainPercent: 60,
     subElements: [
       { element: "水", percent: 20 },
-      { element: "金", percent: 20 }
+      { element: "金", percent: 20 },
     ],
-    
     description: "얼어붙은 겨울 땅. 춥고 딱딱하지만, 그 안에는 세 가지 보물이 숨어있습니다.",
-    
     trigger: {
       when: "인내가 필요한 시기",
       how: "세 가지 재능이 번갈아 빛을 발합니다",
-      example: "장기 프로젝트에서 단계마다 다른 강점을 발휘"
+      example: "장기 프로젝트에서 단계마다 다른 강점을 발휘",
     },
-    
     hidden_power: {
-      "己": {
+      己: {
         name: "기토의 포용",
-        description: "양육하고 키우는 따뜻한 땅의 힘. 사람을 성장시키는 에너지.",
+        description: "양육하고 키우는 따뜻한 땅의 힘. 사람을 성장시키는 광채.",
         when_activated: "누군가를 가르치거나 돌볼 때",
         strength: "공감력, 치유력",
-        metaphor: "얼어붙은 땅이지만, 봄이 오면 가장 비옥합니다."
+        metaphor: "얼어붙은 땅이지만, 봄이 오면 가장 비옥합니다.",
       },
-      "癸": {
+      癸: {
         name: "계수의 직관",
         description: "차가운 지혜. 감정 없이 본질을 꿰뚫는 통찰.",
         when_activated: "냉정한 판단이 필요할 때",
         strength: "직관력, 분석력",
-        metaphor: "땅 속 지하수처럼, 보이지 않지만 흐릅니다."
+        metaphor: "땅 속 지하수처럼, 보이지 않지만 흐릅니다.",
       },
-      "辛": {
+      辛: {
         name: "신금의 정제",
         description: "보석을 다듬는 섬세함. 완벽을 추구하는 미적 감각.",
         when_activated: "디테일이 중요할 때",
         strength: "세련됨, 완성도",
-        metaphor: "땅 속에서 캐낸 원석을 보석으로 만듭니다."
-      }
+        metaphor: "땅 속에서 캐낸 원석을 보석으로 만듭니다.",
+      },
     },
-    
     life_phase: {
       youth: "세 가지 재능 중 어느 것이 나인지 헷갈립니다",
       prime: "상황에 따라 적절한 재능을 꺼내 씁니다",
-      mature: "세 가지를 조화롭게 사용하는 마스터가 됩니다"
+      mature: "세 가지를 조화롭게 사용하는 마스터가 됩니다",
     },
-    
     combination_power: "포용(己) + 직관(癸) + 완벽(辛) = 최고의 멘토",
-    
-    metaphor_story: "겨울 땅을 파면 세 가지가 나옵니다. 흙과 물과 광석. 하나만으로는 부족하지만, 셋이 모이면 완전해집니다."
+    metaphor_story: "겨울 땅을 파면 세 가지가 나옵니다. 흙과 물과 광석. 하나만으로는 부족하지만, 셋이 모이면 완전해집니다.",
   },
-  
   寅: {
     hanja: "寅",
     jiji: "寅",
@@ -122,60 +104,51 @@ export const jijangganMetaphor = {
     icon: "🌲💎",
     season: "봄 이른 아침",
     color: "#10b981",
-    
     hidden: ["甲", "丙", "戊"],
     hiddenSimple: ["갑목(甲木)", "병화(丙火)", "무토(戊土)"],
-    
     mainElement: "木",
     mainPercent: 60,
     subElements: [
       { element: "火", percent: 20 },
-      { element: "土", percent: 20 }
+      { element: "土", percent: 20 },
     ],
-    
     description: "봄날 새벽 숲. 나무가 자라고(木), 햇살이 비추며(火), 땅이 받쳐줍니다(土).",
-    
     trigger: {
       when: "새로운 시작",
       how: "개척(甲) → 열정(丙) → 안정(戊) 순서로 발동",
-      example: "창업 초기: 아이디어 → 실행 → 시스템화"
+      example: "창업 초기: 아이디어 → 실행 → 시스템화",
     },
-    
     hidden_power: {
-      "甲": {
+      甲: {
         name: "갑목의 개척",
         description: "거대한 나무처럼 새 길을 여는 힘. 누구도 가지 않은 길을 먼저 갑니다.",
         when_activated: "미개척 분야에 도전할 때",
         strength: "리더십, 용기",
-        metaphor: "씨앗이 땅을 뚫고 나오는 첫 순간의 힘."
+        metaphor: "씨앗이 땅을 뚫고 나오는 첫 순간의 힘.",
       },
-      "丙": {
+      丙: {
         name: "병화의 열정",
-        description: "태양처럼 뜨겁게 타오르는 에너지. 사람들을 끌어당기는 카리스마.",
+        description: "태양처럼 뜨겁게 타오르는 광채. 사람들을 끌어당기는 카리스마.",
         when_activated: "돌파구가 필요할 때",
         strength: "추진력, 영향력",
-        metaphor: "새벽 햇살이 숲을 밝히듯, 어둠을 밝힙니다."
+        metaphor: "새벽 햇살이 숲을 밝히듯, 어둠을 밝힙니다.",
       },
-      "戊": {
+      戊: {
         name: "무토의 기반",
         description: "산처럼 든든한 안정감. 모든 것을 받쳐주는 믿음직함.",
         when_activated: "기반을 다져야 할 때",
         strength: "신뢰성, 책임감",
-        metaphor: "나무를 키우는 건 결국 땅입니다."
-      }
+        metaphor: "나무를 키우는 건 결국 땅입니다.",
+      },
     },
-    
     life_phase: {
       youth: "열정(丙)으로 시작했다가 좌절하기 쉬움",
       prime: "개척(甲)과 기반(戊)의 균형을 찾습니다",
-      mature: "세 가지를 타이밍에 맞춰 사용합니다"
+      mature: "세 가지를 타이밍에 맞춰 사용합니다",
     },
-    
     combination_power: "개척(甲) + 열정(丙) + 기반(戊) = 창업가의 DNA",
-    
-    metaphor_story: "봄날 아침, 씨앗은 땅을 뚫고(甲), 햇살을 받아(丙), 뿌리를 내립니다(戊). 세 가지가 동시에 일어납니다."
+    metaphor_story: "봄날 아침, 씨앗은 땅을 뚫고(甲), 햇살을 받아(丙), 뿌리를 내립니다(戊). 세 가지가 동시에 일어납니다.",
   },
-  
   卯: {
     hanja: "卯",
     jiji: "卯",
@@ -185,40 +158,32 @@ export const jijangganMetaphor = {
     icon: "🌸💎",
     season: "봄 한낮",
     color: "#22c55e",
-    
     hidden: ["乙"],
     hiddenSimple: ["을목(乙木)"],
-    
     mainElement: "木",
     mainPercent: 100,
-    
     description: "봄날 정원의 꽃과 풀. 순수하고 아름답게 자라는 생명력.",
-    
     trigger: {
       when: "자유로운 표현이 필요할 때",
       how: "유연하고 아름답게 적응합니다",
-      example: "새로운 환경에서도 자기만의 색을 유지하며 성장"
+      example: "새로운 환경에서도 자기만의 색을 유지하며 성장",
     },
-    
     hidden_power: {
-      "乙": {
+      乙: {
         name: "을목의 유연함",
         description: "덩굴처럼 어디서든 자라는 생명력. 부드럽지만 강인합니다.",
         when_activated: "변화와 적응이 필요할 때",
         strength: "적응력, 창의성",
-        metaphor: "담쟁이는 벽을 타고 오릅니다. 길이 없으면 만들어 갑니다."
-      }
+        metaphor: "담쟁이는 벽을 타고 오릅니다. 길이 없으면 만들어 갑니다.",
+      },
     },
-    
     life_phase: {
       youth: "아름답고 순수하지만 약해 보입니다",
       prime: "유연함이 진짜 강인함임을 증명합니다",
-      mature: "어떤 환경에서도 피어나는 꽃이 됩니다"
+      mature: "어떤 환경에서도 피어나는 꽃이 됩니다",
     },
-    
-    metaphor_story: "봄날 꽃은 약해 보이지만, 아스팔트를 뚫고 나옵니다. 부드러움이 곧 힘입니다."
+    metaphor_story: "봄날 꽃은 약해 보이지만, 아스팔트를 뚫고 나옵니다. 부드러움이 곧 힘입니다.",
   },
-  
   辰: {
     hanja: "辰",
     jiji: "辰",
@@ -228,60 +193,51 @@ export const jijangganMetaphor = {
     icon: "🌱💎",
     season: "봄 흐린 오후",
     color: "#84cc16",
-    
     hidden: ["戊", "乙", "癸"],
     hiddenSimple: ["무토(戊土)", "을목(乙木)", "계수(癸水)"],
-    
     mainElement: "土",
     mainPercent: 60,
     subElements: [
       { element: "木", percent: 20 },
-      { element: "水", percent: 20 }
+      { element: "水", percent: 20 },
     ],
-    
     description: "봄비가 내린 후의 땅. 축축하고 비옥하며, 모든 생명을 품습니다.",
-    
     trigger: {
       when: "변화의 시기",
       how: "안정(戊) → 성장(乙) → 지혜(癸) 순환",
-      example: "위기를 기회로: 먼저 안정시키고, 새싹을 틀고, 통찰을 얻음"
+      example: "위기를 기회로: 먼저 안정시키고, 새싹을 틀고, 통찰을 얻음",
     },
-    
     hidden_power: {
-      "戊": {
+      戊: {
         name: "무토의 대지",
         description: "산처럼 모든 것을 받쳐주는 든든함. 흔들리지 않는 중심.",
         when_activated: "기반이 필요할 때",
         strength: "안정감, 책임감",
-        metaphor: "봄비를 받아주는 건 결국 땅입니다."
+        metaphor: "봄비를 받아주는 건 결국 땅입니다.",
       },
-      "乙": {
+      乙: {
         name: "을목의 새싹",
         description: "비온 뒤 땅에서 돋아나는 새싹. 새로운 가능성.",
         when_activated: "성장이 필요할 때",
         strength: "창의성, 적응력",
-        metaphor: "비옥한 땅에서 무엇이든 자랍니다."
+        metaphor: "비옥한 땅에서 무엇이든 자랍니다.",
       },
-      "癸": {
+      癸: {
         name: "계수의 빗물",
         description: "땅속에 스며든 빗물. 조용히 적시는 지혜.",
         when_activated: "통찰이 필요할 때",
         strength: "직관력, 섬세함",
-        metaphor: "빗물은 땅 속 깊이 스며들어 샘물이 됩니다."
-      }
+        metaphor: "빗물은 땅 속 깊이 스며들어 샘물이 됩니다.",
+      },
     },
-    
     life_phase: {
       youth: "흙탕물처럼 혼란스러워 보입니다",
       prime: "비옥한 땅의 가치를 알게 됩니다",
-      mature: "모든 것을 키우는 마스터 가드너가 됩니다"
+      mature: "모든 것을 키우는 마스터 가드너가 됩니다",
     },
-    
     combination_power: "안정(戊) + 성장(乙) + 지혜(癸) = 완벽한 멘토",
-    
-    metaphor_story: "봄비는 땅을 적시고, 땅은 씨앗을 품고, 씨앗은 자랍니다. 세 가지가 하나의 순환을 만듭니다."
+    metaphor_story: "봄비는 땅을 적시고, 땅은 씨앗을 품고, 씨앗은 자랍니다. 세 가지가 하나의 순환을 만듭니다.",
   },
-  
   巳: {
     hanja: "巳",
     jiji: "巳",
@@ -291,60 +247,51 @@ export const jijangganMetaphor = {
     icon: "🐍🔥",
     season: "초여름 열기",
     color: "#f97316",
-    
     hidden: ["丙", "戊", "庚"],
     hiddenSimple: ["병화(丙火)", "무토(戊土)", "경금(庚金)"],
-    
     mainElement: "火",
     mainPercent: 60,
     subElements: [
       { element: "土", percent: 20 },
-      { element: "金", percent: 20 }
+      { element: "金", percent: 20 },
     ],
-    
     description: "뱀이 도사리고 있는 뜨거운 땅. 겉은 조용하지만 안은 불타고 있습니다.",
-    
     trigger: {
       when: "결정적 순간",
       how: "폭발(丙) → 축적(戊) → 정제(庚) 연금술",
-      example: "아이디어를 실행하고, 결과를 쌓고, 정제된 성과로 만듦"
+      example: "아이디어를 실행하고, 결과를 쌓고, 정제된 성과로 만듦",
     },
-    
     hidden_power: {
-      "丙": {
+      丙: {
         name: "병화의 폭발력",
-        description: "태양처럼 강렬한 에너지. 순간적으로 모든 걸 태웁니다.",
+        description: "태양처럼 강렬한 광채. 순간적으로 모든 걸 태웁니다.",
         when_activated: "돌파가 필요할 때",
         strength: "카리스마, 순발력",
-        metaphor: "뱀의 독처럼, 한 방에 결정타를 날립니다."
+        metaphor: "뱀의 독처럼, 한 방에 결정타를 날립니다.",
       },
-      "戊": {
+      戊: {
         name: "무토의 용광로",
         description: "뜨거운 땅처럼 모든 걸 녹여 새롭게 만드는 힘.",
         when_activated: "변화를 만들 때",
         strength: "변혁력, 창조력",
-        metaphor: "용광로는 쇠를 녹여 새로운 형태로 만듭니다."
+        metaphor: "용광로는 쇠를 녹여 새로운 형태로 만듭니다.",
       },
-      "庚": {
+      庚: {
         name: "경금의 칼날",
         description: "불에 달군 칼처럼 날카롭고 강력한 결단력.",
         when_activated: "결단이 필요할 때",
         strength: "결단력, 정확성",
-        metaphor: "달군 칼은 무엇이든 자릅니다."
-      }
+        metaphor: "달군 칼은 무엇이든 자릅니다.",
+      },
     },
-    
     life_phase: {
       youth: "폭발적이지만 통제가 어렵습니다",
       prime: "강렬함을 건설적으로 사용합니다",
-      mature: "연금술사가 됩니다 - 뜨거움으로 새것을 만듦"
+      mature: "연금술사가 됩니다 - 뜨거움으로 새것을 만듦",
     },
-    
     combination_power: "폭발(丙) + 변혁(戊) + 정제(庚) = 혁신가의 힘",
-    
-    metaphor_story: "뱀은 조용히 숨어있다가 한 번에 사냥합니다. 계산된 폭발력, 그것이 巳의 힘입니다."
+    metaphor_story: "뱀은 조용히 숨어있다가 한 번에 사냥합니다. 계산된 폭발력, 그것이 巳의 힘입니다.",
   },
-  
   午: {
     hanja: "午",
     jiji: "午",
@@ -354,52 +301,41 @@ export const jijangganMetaphor = {
     icon: "☀️💎",
     season: "여름 정오",
     color: "#ef4444",
-    
     hidden: ["丁", "己"],
     hiddenSimple: ["정화(丁火)", "기토(己土)"],
-    
     mainElement: "火",
     mainPercent: 70,
-    subElements: [
-      { element: "土", percent: 30 }
-    ],
-    
+    subElements: [{ element: "土", percent: 30 }],
     description: "한여름 정오의 태양. 가장 뜨겁고 밝게 빛나는 순간.",
-    
     trigger: {
       when: "중심에 서야 할 때",
       how: "빛(丁) → 온기(己) 순서로 사람들을 모읍니다",
-      example: "무대 위에서: 먼저 주목받고, 그다음 마음을 얻음"
+      example: "무대 위에서: 먼저 주목받고, 그다음 마음을 얻음",
     },
-    
     hidden_power: {
-      "丁": {
+      丁: {
         name: "정화의 빛",
         description: "촛불처럼 어둠을 밝히는 따뜻한 빛. 사람들을 안내합니다.",
         when_activated: "리더십이 필요할 때",
         strength: "통찰력, 안내력",
-        metaphor: "한여름 태양은 모든 것을 비춥니다."
+        metaphor: "한여름 태양은 모든 것을 비춥니다.",
       },
-      "己": {
+      己: {
         name: "기토의 온기",
         description: "뜨거운 대지처럼 모든 걸 품는 따뜻함. 포용력.",
         when_activated: "사람들을 모아야 할 때",
         strength: "공감력, 치유력",
-        metaphor: "태양이 땅을 데우면, 생명이 자랍니다."
-      }
+        metaphor: "태양이 땅을 데우면, 생명이 자랍니다.",
+      },
     },
-    
     life_phase: {
       youth: "너무 뜨거워 사람들이 피하기도 합니다",
       prime: "적당한 거리에서 빛나는 법을 배웁니다",
-      mature: "태양처럼 모두를 비추지만 태우지 않습니다"
+      mature: "태양처럼 모두를 비추지만 태우지 않습니다",
     },
-    
     combination_power: "빛(丁) + 온기(己) = 카리스마 리더",
-    
-    metaphor_story: "한낮 태양은 그림자를 만들지 않습니다. 모든 것을 똑같이 비춥니다. 그것이 진정한 리더십입니다."
+    metaphor_story: "한낮 태양은 그림자를 만들지 않습니다. 모든 것을 똑같이 비춥니다. 그것이 진정한 리더십입니다.",
   },
-  
   未: {
     hanja: "未",
     jiji: "未",
@@ -409,60 +345,51 @@ export const jijangganMetaphor = {
     icon: "🌾💎",
     season: "여름 저녁",
     color: "#fbbf24",
-    
     hidden: ["己", "丁", "乙"],
     hiddenSimple: ["기토(己土)", "정화(丁火)", "을목(乙木)"],
-    
     mainElement: "土",
     mainPercent: 60,
     subElements: [
       { element: "火", percent: 20 },
-      { element: "木", percent: 20 }
+      { element: "木", percent: 20 },
     ],
-    
     description: "한여름 저녁의 땅. 낮의 열기를 품고 밤을 준비합니다.",
-    
     trigger: {
       when: "전환기",
       how: "포용(己) → 여운(丁) → 새싹(乙) 순환",
-      example: "프로젝트 마무리: 정리하고, 의미를 찾고, 다음을 준비"
+      example: "프로젝트 마무리: 정리하고, 의미를 찾고, 다음을 준비",
     },
-    
     hidden_power: {
-      "己": {
+      己: {
         name: "기토의 품",
         description: "낮의 열기를 품은 땅. 모든 것을 받아주는 포용력.",
         when_activated: "마무리할 때",
         strength: "공감력, 포용력",
-        metaphor: "여름 땅은 하루의 열기를 모두 품습니다."
+        metaphor: "여름 땅은 하루의 열기를 모두 품습니다.",
       },
-      "丁": {
+      丁: {
         name: "정화의 여운",
         description: "저녁 노을처럼 남아있는 따뜻함. 하루의 의미.",
         when_activated: "성찰할 때",
         strength: "통찰력, 감성",
-        metaphor: "노을은 하루를 돌아보게 만듭니다."
+        metaphor: "노을은 하루를 돌아보게 만듭니다.",
       },
-      "乙": {
+      乙: {
         name: "을목의 밤",
         description: "밤이슬을 머금고 자라는 식물. 조용한 성장.",
         when_activated: "재충전할 때",
         strength: "회복력, 적응력",
-        metaphor: "식물은 밤에 자랍니다."
-      }
+        metaphor: "식물은 밤에 자랍니다.",
+      },
     },
-    
     life_phase: {
       youth: "낮과 밤 사이에서 방황합니다",
       prime: "전환의 달인이 됩니다",
-      mature: "끝과 시작을 연결하는 브릿지가 됩니다"
+      mature: "끝과 시작을 연결하는 브릿지가 됩니다",
     },
-    
     combination_power: "포용(己) + 성찰(丁) + 재생(乙) = 지혜로운 전환자",
-    
-    metaphor_story: "여름 저녁, 땅은 하루를 정리하고 밤을 준비합니다. 끝이 곧 시작입니다."
+    metaphor_story: "여름 저녁, 땅은 하루를 정리하고 밤을 준비합니다. 끝이 곧 시작입니다.",
   },
-  
   申: {
     hanja: "申",
     jiji: "申",
@@ -472,60 +399,51 @@ export const jijangganMetaphor = {
     icon: "⚔️💎",
     season: "가을 서늘함",
     color: "#94a3b8",
-    
     hidden: ["庚", "壬", "戊"],
     hiddenSimple: ["경금(庚金)", "임수(壬水)", "무토(戊土)"],
-    
     mainElement: "金",
     mainPercent: 60,
     subElements: [
       { element: "水", percent: 20 },
-      { element: "土", percent: 20 }
+      { element: "土", percent: 20 },
     ],
-    
     description: "가을 서리가 내린 금속. 차갑고 날카로우며 정확합니다.",
-    
     trigger: {
       when: "결단의 시간",
       how: "결단(庚) → 흐름(壬) → 기반(戊) 전략",
-      example: "의사결정: 자르고, 흐름을 읽고, 새 기반을 만듦"
+      example: "의사결정: 자르고, 흐름을 읽고, 새 기반을 만듦",
     },
-    
     hidden_power: {
-      "庚": {
+      庚: {
         name: "경금의 칼날",
         description: "가을 칼바람처럼 날카로운 결단력. 불필요한 것을 잘라냅니다.",
         when_activated: "정리가 필요할 때",
         strength: "결단력, 정확성",
-        metaphor: "가을은 나뭇가지를 정리합니다."
+        metaphor: "가을은 나뭇가지를 정리합니다.",
       },
-      "壬": {
+      壬: {
         name: "임수의 흐름",
         description: "큰 강처럼 막힘없이 흐르는 지혜. 우회하는 전략.",
         when_activated: "유연함이 필요할 때",
         strength: "적응력, 전략",
-        metaphor: "물은 돌을 피해 흐릅니다."
+        metaphor: "물은 돌을 피해 흐릅니다.",
       },
-      "戊": {
+      戊: {
         name: "무토의 견고함",
         description: "산처럼 흔들리지 않는 기반. 모든 것을 받쳐줍니다.",
         when_activated: "안정이 필요할 때",
         strength: "신뢰성, 책임감",
-        metaphor: "금속을 만드는 건 결국 땅입니다."
-      }
+        metaphor: "금속을 만드는 건 결국 땅입니다.",
+      },
     },
-    
     life_phase: {
       youth: "칼날(庚)만 세워서 적을 만들기 쉬움",
       prime: "흐름(壬)과 기반(戊)을 배웁니다",
-      mature: "세 가지를 조화롭게 쓰는 전략가가 됩니다"
+      mature: "세 가지를 조화롭게 쓰는 전략가가 됩니다",
     },
-    
     combination_power: "결단(庚) + 전략(壬) + 기반(戊) = 완벽한 전략가",
-    
-    metaphor_story: "가을 강은 서늘합니다. 물은 차갑고, 돌은 단단하고, 바람은 날카롭습니다. 세 가지가 모여 완벽한 균형을 만듭니다."
+    metaphor_story: "가을 강은 서늘합니다. 물은 차갑고, 돌은 단단하고, 바람은 날카롭습니다. 세 가지가 모여 완벽한 균형을 만듭니다.",
   },
-  
   酉: {
     hanja: "酉",
     jiji: "酉",
@@ -535,40 +453,32 @@ export const jijangganMetaphor = {
     icon: "💍💎",
     season: "가을 석양",
     color: "#f1f5f9",
-    
     hidden: ["辛"],
     hiddenSimple: ["신금(辛金)"],
-    
     mainElement: "金",
     mainPercent: 100,
-    
     description: "가을 석양 아래 빛나는 보석. 순수하고 완벽하게 정제되었습니다.",
-    
     trigger: {
       when: "완성이 필요할 때",
       how: "모든 것을 아름답게 마무리합니다",
-      example: "프로젝트 완성: 디테일까지 완벽하게"
+      example: "프로젝트 완성: 디테일까지 완벽하게",
     },
-    
     hidden_power: {
-      "辛": {
+      辛: {
         name: "신금의 완벽",
         description: "정제된 보석처럼 완벽을 추구합니다. 세련되고 아름답습니다.",
         when_activated: "완성도가 중요할 때",
         strength: "미적감각, 정밀함",
-        metaphor: "석양빛 아래 보석은 가장 아름답게 빛납니다."
-      }
+        metaphor: "석양빛 아래 보석은 가장 아름답게 빛납니다.",
+      },
     },
-    
     life_phase: {
       youth: "완벽주의로 시작을 못하기도 합니다",
       prime: "완벽함이 진짜 강점임을 깨닫습니다",
-      mature: "모든 것을 예술 작품으로 만듭니다"
+      mature: "모든 것을 예술 작품으로 만듭니다",
     },
-    
-    metaphor_story: "석양은 하루 중 가장 아름다운 순간입니다. 완벽한 빛, 완벽한 색, 완벽한 타이밍."
+    metaphor_story: "석양은 하루 중 가장 아름다운 순간입니다. 완벽한 빛, 완벽한 색, 완벽한 타이밍.",
   },
-  
   戌: {
     hanja: "戌",
     jiji: "戌",
@@ -578,60 +488,51 @@ export const jijangganMetaphor = {
     icon: "🌅💎",
     season: "가을 황혼",
     color: "#a16207",
-    
     hidden: ["戊", "辛", "丁"],
     hiddenSimple: ["무토(戊土)", "신금(辛金)", "정화(丁火)"],
-    
     mainElement: "土",
     mainPercent: 60,
     subElements: [
       { element: "金", percent: 20 },
-      { element: "火", percent: 20 }
+      { element: "火", percent: 20 },
     ],
-    
     description: "가을 황혼의 땅. 하루를 정리하며 세 가지 보물을 품습니다.",
-    
     trigger: {
       when: "마무리와 성찰",
       how: "안정(戊) → 정제(辛) → 빛(丁) 순환",
-      example: "커리어 전환: 기반 다지고, 완성하고, 새 빛을 찾음"
+      example: "커리어 전환: 기반 다지고, 완성하고, 새 빛을 찾음",
     },
-    
     hidden_power: {
-      "戊": {
+      戊: {
         name: "무토의 축적",
         description: "하루 동안 쌓인 모든 것을 품는 땅. 경험의 보물창고.",
         when_activated: "정리가 필요할 때",
         strength: "축적력, 안정감",
-        metaphor: "황혼의 땅은 하루를 모두 기억합니다."
+        metaphor: "황혼의 땅은 하루를 모두 기억합니다.",
       },
-      "辛": {
+      辛: {
         name: "신금의 정제",
         description: "하루를 돌아보며 의미를 찾습니다. 경험을 지혜로.",
         when_activated: "성찰할 때",
         strength: "통찰력, 완성도",
-        metaphor: "황혼은 하루를 완성합니다."
+        metaphor: "황혼은 하루를 완성합니다.",
       },
-      "丁": {
+      丁: {
         name: "정화의 마지막 빛",
         description: "저녁 노을처럼 아름다운 마무리. 새로운 시작의 씨앗.",
         when_activated: "전환할 때",
         strength: "통찰력, 희망",
-        metaphor: "노을은 내일의 약속입니다."
-      }
+        metaphor: "노을은 내일의 약속입니다.",
+      },
     },
-    
     life_phase: {
       youth: "끝만 보고 시작을 못하기도 합니다",
       prime: "마무리의 중요성을 깨닫습니다",
-      mature: "완벽한 엔딩을 만드는 마스터가 됩니다"
+      mature: "완벽한 엔딩을 만드는 마스터가 됩니다",
     },
-    
     combination_power: "축적(戊) + 정제(辛) + 성찰(丁) = 지혜의 수호자",
-    
-    metaphor_story: "황혼은 하루의 끝이지만, 가장 아름다운 순간입니다. 끝이 아니라 완성입니다."
+    metaphor_story: "황혼은 하루의 끝이지만, 가장 아름다운 순간입니다. 끝이 아니라 완성입니다.",
   },
-  
   亥: {
     hanja: "亥",
     jiji: "亥",
@@ -641,53 +542,42 @@ export const jijangganMetaphor = {
     icon: "🌊💎",
     season: "겨울 시작",
     color: "#1e3a8a",
-    
     hidden: ["壬", "甲"],
     hiddenSimple: ["임수(壬水)", "갑목(甲木)"],
-    
     mainElement: "水",
     mainPercent: 70,
-    subElements: [
-      { element: "木", percent: 30 }
-    ],
-    
+    subElements: [{ element: "木", percent: 30 }],
     description: "겨울이 시작되는 깊은 밤의 물. 고요하지만 생명을 품고 있습니다.",
-    
     trigger: {
       when: "재충전과 준비",
       how: "휴식(壬) → 준비(甲) 순환",
-      example: "안식년: 깊이 쉬면서 다음을 준비"
+      example: "안식년: 깊이 쉬면서 다음을 준비",
     },
-    
     hidden_power: {
-      "壬": {
+      壬: {
         name: "임수의 깊이",
         description: "바다처럼 깊고 넓은 지혜. 모든 것을 품고 흐릅니다.",
         when_activated: "통찰이 필요할 때",
         strength: "지혜, 포용력",
-        metaphor: "깊은 물은 조용하지만 무한합니다."
+        metaphor: "깊은 물은 조용하지만 무한합니다.",
       },
-      "甲": {
+      甲: {
         name: "갑목의 씨앗",
         description: "물 속에 숨겨진 씨앗. 봄을 기다리는 잠재력.",
         when_activated: "새 시작을 준비할 때",
         strength: "잠재력, 준비력",
-        metaphor: "씨앗은 겨울 물 속에서 봄을 꿈꿉니다."
-      }
+        metaphor: "씨앗은 겨울 물 속에서 봄을 꿈꿉니다.",
+      },
     },
-    
     life_phase: {
       youth: "깊이만 있고 실행이 약합니다",
       prime: "휴식과 준비의 균형을 찾습니다",
-      mature: "깊은 곳에서 새것을 잉태하는 창조자가 됩니다"
+      mature: "깊은 곳에서 새것을 잉태하는 창조자가 됩니다",
     },
-    
     combination_power: "깊이(壬) + 잠재력(甲) = 무한한 가능성",
-    
-    metaphor_story: "겨울 바다는 고요합니다. 하지만 깊은 곳에선 봄을 준비하고 있습니다. 끝이 아니라 시작입니다."
-  }
-  
-} as const;
+    metaphor_story: "겨울 바다는 고요합니다. 하지만 깊은 곳에선 봄을 준비하고 있습니다. 끝이 아니라 시작입니다.",
+  },
+} as const
 
 /**
  * 지장간 활용 가이드
@@ -696,21 +586,19 @@ export const jijangganGuide = {
   what: "12지지 안에 숨어있는 천간들. 보석 내부의 숨은 결정.",
   when: "특정 상황에서 평소와 다른 능력이 발휘됨",
   how: "대운이나 세운에서 해당 지지가 오면 숨은 천간이 활성화됨",
-  
   activation: {
     always: "주(主) 천간은 항상 활성화",
     sometimes: "부(副) 천간은 대운/세운에 따라 활성화",
-    rare: "미(微) 천간은 특별한 시기에만 활성화"
+    rare: "미(微) 천간은 특별한 시기에만 활성화",
   },
-  
   reading_order: {
     "子丑": "겨울 → 봄 준비 (水 → 土)",
     "寅卯辰": "봄의 성장 (木 왕성)",
     "巳午未": "여름의 확산 (火 왕성)",
     "申酉戌": "가을의 수확 (金 왕성)",
-    "亥": "겨울 시작, 순환의 끝과 시작 (水)"
-  }
-};
+    亥: "겨울 시작, 순환의 끝과 시작 (水)",
+  },
+}
 
 /**
  * 숨은 결정 개수별 해석
@@ -719,24 +607,24 @@ export const hiddenCrystalCount = {
   one: {
     count: 1,
     name: "순수한 결정",
-    trait: "명확하고 집중된 에너지",
+    trait: "명확하고 집중된 광채",
     advantage: "한 가지를 깊이 파고듦",
-    challenge: "융통성 부족"
+    challenge: "융통성 부족",
   },
   two: {
     count: 2,
     name: "균형의 결정",
-    trait: "두 가지 면을 오가는 에너지",
+    trait: "두 가지 면을 오가는 광채",
     advantage: "상황에 따라 다른 능력 발휘",
-    challenge: "정체성 혼란"
+    challenge: "정체성 혼란",
   },
   three: {
     count: 3,
     name: "완전한 결정",
-    trait: "다면적이고 복합적인 에너지",
+    trait: "다면적이고 복합적인 광채",
     advantage: "모든 상황에 대처 가능",
-    challenge: "어느 것이 진짜 나인지 헷갈림"
-  }
-};
+    challenge: "어느 것이 진짜 나인지 헷갈림",
+  },
+}
 
-export type JijangganKey = keyof typeof jijangganMetaphor;
+export type JijangganKey = keyof typeof jijangganMetaphor
